@@ -1,16 +1,4 @@
-<!-- GÖRÜNTÜÜ -->
-<!-- Welcome to {{title}}
-Hello {{user}}
 
-{{product.productName}}
-{{product1.productName}}
-{{product2.productName}}
-{{product3.productName}}
-
-<ul>
-  <li *ngFor="let product of products">{{product.productName}}</li>  *ngFor= angular için direktif demektir.   
- 
-</ul>  -->
 <div class="container">
   <app-navi></app-navi>
   <div class="row">
@@ -18,9 +6,9 @@ Hello {{user}}
       <app-category></app-category>
     </div>
     <div class="col-md-9">
-      <app-product></app-product>
+      <router-outlet></router-outlet>
     </div>
   </div>
 
-  <router-outlet></router-outlet>
+ 
 </div>
